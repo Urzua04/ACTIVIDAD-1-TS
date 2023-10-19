@@ -44,3 +44,22 @@ else:
     print("El texto no contiene la letra 'O'. No se realizaron modificaciones.")
 
 
+"""
+Investgación
+Python proporciona varias funciones integradas en su biblioteca estándar para ayudar a manipular cadenas de muchas maneras diferentes.
+split(): esta función se utiliza para dividir una cadena en una lista de subcadenas según un separador específico. Por ejemplo, si tenemos una cadena "¡Hola mundo!" y queremos dividirlo en dos subcadenas "Hola" y "Mundo!", podemos usar la función split() con el separador ",". La sintaxis de la función split() es la siguiente:
+cadena.split(separador, maxsplit)
+
+separador: este es el carácter o secuencia de caracteres que se utiliza para dividir la cadena. Si no se especifica ningún separador, se utiliza cualquier carácter de espacio en blanco como separador.
+maxsplit: este es un parámetro opcional que especifica el número máximo de divisiones que se realizarán. Si no se especifica, todas las apariciones del separador se utilizan para dividir la cadena.
+join(): esta función se utiliza para unir una lista de cadenas en una sola cadena usando un separador específico. Por ejemplo, si tenemos una lista de cadenas ["Hola", "¡Mundo!"] y queremos unirlas en una sola cadena "¡Hola, Mundo!", podemos usar la función join() con el separador ", ". La sintaxis de la función join() es la siguiente:
+separador.unir(iterable)
+
+separador: Este es el carácter o secuencia de caracteres que se utiliza para unir las cadenas.
+iterable: esta es la lista de cadenas que se van a unir.
+
+A continuación se presentan tres situaciones en un programa en las que sería conveniente utilizar estas funciones:
+Análisis de un archivo CSV: al leer un archivo CSV, podemos usar la función split() para dividir cada línea en una lista de valores basada en el separador de coma. Esto facilita el acceso a cada valor de la línea como un elemento separado en la lista.
+Unir componentes de ruta: cuando trabajamos con rutas de archivos, podemos usar la función join() para unir los componentes de la ruta en una sola cadena de ruta usando el separador apropiado para el sistema operativo. Por ejemplo, en Windows, el separador es "", mientras que en los sistemas basados en Unix, el separador es "/".
+Formato de cadenas: al construir una cadena a partir de múltiples valores, podemos usar la función join() para concatenar los valores en una sola cadena usando un separador específico. Esto se usa a menudo en declaraciones de registro o depuración para crear un mensaje formateado que incluye valores variables.
+"""
